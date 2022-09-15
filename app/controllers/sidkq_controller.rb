@@ -1,8 +1,7 @@
 class SidkqController < ApplicationController
   def report
-		puts "working..."
-		generate_report()
-		puts "Report"
+		ReportWorker.perform_async("date 1","date 2")
+		puts "processing........................................................................"
 	end
 
 	private
