@@ -1,6 +1,8 @@
 class SidkqController < ApplicationController
   def report
+		puts "working..."
 		generate_report()
+		puts "Report"
 	end
 
 	private
